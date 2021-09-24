@@ -1,15 +1,14 @@
 import React from 'react';
-import { View, Button, StyleSheet, TouchableOpacity, Text } from "react-native";
+import { View, Button, StyleSheet, TouchableOpacity, Text, Platform } from "react-native";
 
 export const AppButton = ({ onPress, title, size, backgroundColor }) => (
-  <View
+  <TouchableOpacity
     style={getButtonStyle(backgroundColor, size)}
-    onPress={onPress}
-  >
+    onPress={onPress}>
     <Text style={styles.textStyle}>
       {title}
     </Text>
-  </View>
+  </TouchableOpacity>
 );
 
 
@@ -31,7 +30,14 @@ const getButtonStyle = (color, size) => {
 const styles = StyleSheet.create({
   textStyle: {
     color: 'white',
-    fontFamily: 'Futura',
-    fontSize: 18
+    fontSize: 18,
+    ...Platform.select({
+      ios: {
+        fontFamily: 'Futura'
+      },
+      android: {
+        fontFamily: 'Roboto'
+      }
+    })
   }
 });
