@@ -15,7 +15,7 @@ export const AppButton = ({ onPress, title, size, backgroundColor }) => (
 const getButtonStyle = (color, size) => {
   return {
     paddingVertical: 20,
-    width: parseInt(size) || 170,
+    width: parseInt(size) || '100%',
     backgroundColor: color,
     borderRadius: 30,
     justifyContent: 'center',
