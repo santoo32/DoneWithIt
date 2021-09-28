@@ -8,4 +8,4 @@ Developed completely in  :dizzy:	**__React Native__** :dizzy:
 
 ## Screenshots
 
-<img width="189" alt="134506209-8553ab6d-e608-4733-aae9-6fd59f88a60f-removebg-preview" src="https://user-images.githubusercontent.com/31729899/135096712-b78c58c9-5a90-405b-a520-34abc41b8870.png">
+![Done With It!](https://user-images.githubusercontent.com/31729899/135136255-b2c64015-f7a1-4501-a68f-3e7beca1616a.png)
