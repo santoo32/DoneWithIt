@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, ImageBackground, Text, View, SafeAreaView, Button, Image, TouchableWithoutFeedback, Alert } from 'react-native';
-import { useDeviceOrientation } from '@react-native-community/hooks';
-import { AppButton } from './../components/button'
+import { StyleSheet, ImageBackground, View, SafeAreaView, Image } from 'react-native';
+import AppText from '../components/appText';
+import { AppButton } from '../components/appButton'
 
 export const WelcomeScreen = () => {
   //const { landscape } = useDeviceOrientation();
@@ -12,14 +11,14 @@ export const WelcomeScreen = () => {
       style={styles.container}>
       <SafeAreaView
         style={styles.iconContainer}>
-        <Text style={{ color: 'white', fontSize: 27, fontFamily: 'Futura' }}>Done with it!</Text>
+        <AppText style={{ color: 'white', fontSize: 27 }} text={'Done with it!'}></AppText>
         <View style={{ padding: 20 }}>
           <Image
             source={require("../assets/welcomeIconColor.png")}
             style={styles.mainIcon}
           />
         </View>
-        <Text style={{ color: 'white', fontSize: 18, fontFamily: 'Futura' }}>Sell What You Don't need</Text>
+        <AppText style={{ color: 'white', fontSize: 18 }} text={'Sell What You Dont need'}></AppText>
       </SafeAreaView>
       <SafeAreaView
         style={styles.actionsContainer}>

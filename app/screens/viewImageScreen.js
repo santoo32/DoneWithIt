@@ -1,8 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, ImageBackground, Text, View, SafeAreaView, Button, Image, TouchableWithoutFeedback, Alert } from 'react-native';
-import { useDeviceOrientation } from '@react-native-community/hooks';
-import { AppButton } from './../components/button'
+import { StyleSheet, SafeAreaView, Image } from 'react-native';
 import { Entypo, AntDesign } from '@expo/vector-icons';
 
 
