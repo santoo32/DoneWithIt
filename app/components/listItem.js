@@ -20,7 +20,7 @@ export default function ListItem({ image, title, subtitle }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flexDirection: 'row', marginTop: 30 },
+  container: { flexDirection: 'row', padding: 15 },
   image: { width: 70, height: 70, borderRadius: 35, overflow: 'hidden', marginRight: 10 },
   title: { fontSize: 20, fontWeight: '500' },
   subtitle: { fontSize: 19, color: '#6e6969' }
