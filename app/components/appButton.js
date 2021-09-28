@@ -6,7 +6,7 @@ export const AppButton = ({ onPress, title, size, backgroundColor }) => (
   <TouchableOpacity
     style={getButtonStyle(backgroundColor, size)}
     onPress={onPress}>
-    <AppText style={styles.text} text={title}></AppText>
+    <AppText style={styles.textStyle} text={title}></AppText>
   </TouchableOpacity>
 );
 
