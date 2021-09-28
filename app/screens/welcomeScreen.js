@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, View, SafeAreaView, Image } from 'react-native';
 import AppText from '../components/appText';
-import { AppButton } from '../components/button'
+import { AppButton } from '../components/appButton'
 
 export const WelcomeScreen = () => {
   //const { landscape } = useDeviceOrientation();
