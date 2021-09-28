@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native'
+import { FlatList, StyleSheet, View } from 'react-native'
 import AppText from '../components/appText'
 import ListItem from '../components/listItem'
 import Constants from 'expo-constants'
@@ -20,8 +20,8 @@ export default function MessagesScreen() {
       <FlatList
         data={messages}
         keyExtractor={message => message.id.toString()}
-        renderItem={({ item }) => <ListItem image={item.image} title={item.title} subtitle={item.message} onPress={() => console.log("asd")}></ListItem>}
-        ItemSeparatorComponent={() => <View style={{ width: '95%', height: 1, backgroundColor: '#dbdbdb' }}></View>}>
+        renderItem={({ item }) => <ListItem image={item.image} title={item.title} subtitle={item.message} onPress={() => console.log("handled message press")}></ListItem>}
+        ItemSeparatorComponent={() => <View style={styles.itemSeparator}></View>}>
       </FlatList>
     </View>
   )
@@ -37,5 +37,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30
-  }
+  },
+  itemSeparator: { width: '95%', height: 1, backgroundColor: '#dbdbdb' }
 })
