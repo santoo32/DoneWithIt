@@ -20,7 +20,12 @@ export default function MessagesScreen() {
       <FlatList
         data={messages}
         keyExtractor={message => message.id.toString()}
-        renderItem={({ item }) => <ListItem image={item.image} title={item.title} subtitle={item.message} onPress={() => console.log("handled message press")}></ListItem>}
+        renderItem={({ item }) => <ListItem
+          image={item.image}
+          title={item.title}
+          subtitle={item.message}
+          onPress={() => console.log("handled message press")}>
+        </ListItem>}
         ItemSeparatorComponent={() => <View style={styles.itemSeparator}></View>}>
       </FlatList>
     </View>
