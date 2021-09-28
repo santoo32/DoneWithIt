@@ -1,8 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, ImageBackground, Text, View, SafeAreaView, Button, Image, TouchableWithoutFeedback, Alert } from 'react-native';
-import { useDeviceOrientation } from '@react-native-community/hooks';
-import { AppButton } from '../components/button'
+import { StyleSheet, SafeAreaView } from 'react-native';
 import ProductDisplay from '../components/productDisplay';
 
 export const ProductListScreen = () => {
@@ -20,8 +17,8 @@ export const ProductListScreen = () => {
 }
 
 const products = [{
-  title: 'prod 1', subtitle: '$1', image: 'https://picsum.photos/400/400'
-}, { title: 'prod2', subtitle: '$3000', image: 'https://picsum.photos/400/400' }]
+  title: 'Vendo juego de play 2', subtitle: '$1', image: 'https://picsum.photos/400/400'
+}, { title: 'Bicicleta flama', subtitle: '$3000', image: 'https://picsum.photos/400/400' }]
 
 const styles = StyleSheet.create({
   container: {
