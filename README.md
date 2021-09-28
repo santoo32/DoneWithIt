@@ -2,9 +2,9 @@
 
 > ## _Work in progress!_
 
-This repository will be used to implement a fictional marketplace app that will allow people to sell used items to people 
+This repository will be used to implement a fictional marketplace app that will allow people to sell used items 
 
-> Developed completely in React Native
+Developed completely in  :dizzy:	**__React Native__** :dizzy:	
 
 ## Screenshots
 
