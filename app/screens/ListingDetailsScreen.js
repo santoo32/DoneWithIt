@@ -15,16 +15,23 @@ export default function ListingDetailsScreen(props) {
         resizeMode="cover"
         style={styles.productImage} />
       <View style={{ padding: 15 }}>
-        <AppText style={styles.title} text={'asdasdasd'}></AppText>
+        <AppText style={styles.title} text={'A very awesome product'}></AppText>
         <AppText style={styles.subtitle} text={'$100'}></AppText>
-        <ListItem image='https://picsum.photos/400/400' title="Santiago Roa" subtitle="5 listings" />
+      </View>
+      <View>
+        <ListItem
+          title="Santiago Roa"
+          image={{ uri: 'https://picsum.photos/70/70' }}
+          imageStyles={{ width: 70, height: 70 }}
+          subtitle="5 listings"
+          onPress={() => console.log("Press")} />
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  productImage: { width: '100%', height: 400 },
+  productImage: { height: 400 },
   title: { fontSize: 24, fontWeight: '500', marginBottom: 20 },
   subtitle: { color: "green", fontSize: 20, fontWeight: 'bold' }
 });

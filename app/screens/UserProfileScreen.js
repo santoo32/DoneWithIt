@@ -22,7 +22,7 @@ export default function UserProfileScreen() {
         {
           image: require('../assets/lista.png'),
           title: "My Listings",
-          containerStyle: { backgroundColor: 'blue' }
+          containerStyle: { backgroundColor: '#4fcaff' }
         },
         {
           image: require('../assets/user.png'),

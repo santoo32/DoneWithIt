@@ -25,7 +25,7 @@ export default function ListItem({ title, subtitle, onPress, containerStyle, ima
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     flexDirection: 'row',
     padding: 15,
     alignItems: 'center'
