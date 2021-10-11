@@ -3,6 +3,8 @@ import { StyleSheet, View, Image } from 'react-native'
 import AppText from '../components/appText';
 import ListItem from '../components/listItem';
 
+// Screen for rendering the details of a product
+
 export default function ListingDetailsScreen(props) {
   return (
     <View>

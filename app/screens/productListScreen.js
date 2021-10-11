@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, SafeAreaView } from 'react-native';
 import ProductDisplay from '../components/productDisplay';
 
+// Screen for displaying products for sale
+
 export const ProductListScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
