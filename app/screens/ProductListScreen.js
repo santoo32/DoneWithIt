@@ -4,7 +4,7 @@ import ProductDisplay from '../components/productDisplay';
 
 // Screen for displaying products for sale
 
-export const ProductListScreen = () => {
+export default function ProductListScreen() {
   return (
     <SafeAreaView style={styles.container}>
       {products.map(element => {
@@ -19,8 +19,8 @@ export const ProductListScreen = () => {
 }
 
 const products = [{
-  title: 'Vendo juego de play 2', subtitle: '$1', image: 'https://picsum.photos/400/400'
-}, { title: 'Bicicleta flama', subtitle: '$3000', image: 'https://picsum.photos/400/400' }]
+  title: 'Random product that I no longer need', subtitle: '$150', image: 'https://picsum.photos/400/400'
+}, { title: 'Used red bike', subtitle: '$3000', image: 'https://picsum.photos/400/400' }]
 
 const styles = StyleSheet.create({
   container: {

@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     width: '95%'
   },
   productImage: { width: '100%', height: 200 },
-  title: { fontSize: 22 },
+  title: { fontSize: 22, paddingBottom: 10 },
   subtitle: { color: "green", fontSize: 18, fontWeight: 'bold' }
 });
 
